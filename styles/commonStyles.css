@@ -1,71 +1,22 @@
-body {
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.75) ), url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Tsunami_by_hokusai_19th_century.jpg') no-repeat center fixed; 
-    background-size: cover;
-    z-index: -1;
+
+
+header {
+    position: fixed;
+    background: transparent;
 }
 
-nav ul {
-    margin-left: 80%;
-    text-align: center;
-    position: block;
-    display: flex;
-    padding: 5px;
+.hero {
+    background-color: #243047;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
-    list-style: none;
-    border: 1px solid black;
-    height: auto;
-    padding: 15px;
-    border-radius: 20px;
-    border: 1px solid rgba(103, 103, 103, 0.343);
-    background-color: rgba(255, 255, 255, 0.829);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-    border: 1px solid black;
-    font-weight: bold;
+.hero img {
+    object-fit: cover;
+    width: 64px;
+    height: 64px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-.main-container {
-    text-align: center;
-    margin-left: 10%;
-    margin-top: 15%;
-    margin-bottom: 18%;
-    width: 80%;
-    height: auto;
-    padding: 30px;
-    border-radius: 20px;
-    border: 1px solid rgba(103, 103, 103, 0.343);
-    background-color: rgba(255, 255, 255, 0.829);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-    border: 1px solid black;
-}
-
-.container {
-    margin-left: 10%;
-    margin-top: 5%;
-    margin-bottom: 2%;
-    width: 80%;
-    height: auto;
-    padding: 30px;
-    border-radius: 20px;
-    border: 1px solid rgba(103, 103, 103, 0.343);
-    background-color: rgba(255, 255, 255, 0.829);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-    border: 1px solid black;
-}
-
-.logo {
-    display: flex;
-    position: absolute;
-    margin-right: 93%;
-    padding: 18px;
-    color: green;
-    font-weight: bolder;
-    font-size: 40px;
-    background-color: rgba(255, 255, 255, 0.829);
+.mission-image {
+    background-color: #243047;
 }
