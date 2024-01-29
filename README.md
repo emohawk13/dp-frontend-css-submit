@@ -6,7 +6,7 @@ Replicate the first 3 (three) sections of the "Flying Cowboys" website.
 
 Match the following items in your replication:
 Title
-Navbar (see notes on "fixed position" to create the 2 sections needed for the navbar to stayi in play while scrolling)
+Navbar (see notes on "fixed position" to create the 2 sections needed for the navbar to staying in play while scrolling)
 Hero Section
 Mission Section
 
