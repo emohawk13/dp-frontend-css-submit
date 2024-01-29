@@ -1,29 +1,28 @@
-Assignment - Webpage Replication 2
+Assignment - Webpage Replication 3
 
 
-Completion requirements
-Replicate the first 3 (three) sections of the "Flying Cowboys" website.
+Now that we better understand the box model, display and layout we are ready to try replicating a harder layout. In this replication we will recreate the login page below.
 
-Match the following items in your replication:
-Title
-Navbar (see notes on "fixed position" to create the 2 sections needed for the navbar to stayi in play while scrolling)
-Hero Section
-Mission Section
+Include the following in your replication:
 
-Consider the following while matching each item
-Font
-Sizing
-Spacing/Border
-Position/Alignment
-Color
+Create a navigation bar
 
-Import 1 (one) fontawesome icon
+Include a hero image that takes up the left half of the page
 
-Import 1 (one) custom font
+The login form should:
+Be on the right side of the page
+Be centered in the white space
+Submit to https://httpbin.org/post and should echo back
+Include a:
+Large header
+Email field (required field)
+Password field (required field)
+Submit Button
+Style the form elements
 
-For additional practice:
-Add a footer to the webpage
-Insert and size an image in the place of the video
-Insert and size the video
-
-https://www.theflyingcowboys.com/
+Additional Stylings:
+Include 2 (two) icons from fontawesome
+Import at least 1 (one) font from google fonts
+Have a default font for the whole page
+Change the default font to a different font for your login header
+Style the form elements (the best you can)

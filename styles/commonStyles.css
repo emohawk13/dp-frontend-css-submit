@@ -1,22 +1,32 @@
-
-
-header {
-    position: fixed;
-    background: transparent;
+body {
+    background-color: darkgreen;
 }
 
-.hero {
-    background-color: #243047;
+nav {
+    height: 50px;
     margin: 0;
-    padding: 0;
+    color: white;
 }
 
-.hero img {
-    object-fit: cover;
-    width: 64px;
-    height: 64px;
+.containers {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
-.mission-image {
-    background-color: #243047;
+.left-container {
+    margin: 0%;
+    height: 1vh;
+}
+
+.right-container{
+    margin: 0%;
+    background-color: antiquewhite;
+    height: 1vh;
+}
+
+form {
+    padding-top: 10%;
 }
