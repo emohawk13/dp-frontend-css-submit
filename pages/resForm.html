@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/common-styles.css">
+  <title>Reservation Form</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul> 
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <form id="reservationForm" action="completedForm.html" method="post"> 
+            <div>
+                <h2>Reservation Form</h2>
+                <input id="f_name" name="f_name" type="text" placeholder="Your First Name">
+                <input id="l_name" name="l_name" type="text" placeholder="Your Last Name">
+                <input id="email" name="email" type="email" placeholder="Your Email">
+                <input id="p_number" name="p_number" type="tel" placeholder="Your Phone Number">
+
+                <label for="start_date">Arrival Date:</label> 
+                <input id="start_date" name="s_date" type="date">
+
+                <label for="end_date">Departure Date:</label> 
+                <input id="end_date" name="e_date" type="date"> 
+
+                <br>
+                <h3>Which package would you like?</h3>
+                <label for="basic">Basic Package</label>
+                <input type="radio" id="basic" name="package" checked> 
+
+                <label for="basic">Premium Package</label>
+                <input type="radio" id="basic" name="package"> 
+
+                <br>
+                <h3>Do you need a Car Rental services?</h3>
+                <label for="car">Car Rental</label>
+                <input type="checkbox" id="car" name="car_rental" checked> 
+
+                <br><br>
+
+                <h3>Where do you plan to stay?</h3>
+                <label for="hotel">Hotel Rental</label>
+                <input type="checkbox" id="hotel" name="hotel_rental"> 
+
+                <label for="bnb">Air BnB</label>
+                <input type="checkbox" id="bnb" name="hotel_rental"> 
+
+                <label for="other_stay">Other</label>
+                <input type="checkbox" id="other_stay" name="hotel_rental"> 
+
+                <br><br>
+
+                <h3>Other Accommodations</h3>
+                <label for="other">If needed please check the box</label>
+                <input type="checkbox" id="other" name="other_accommodations"> 
+
+                <br>
+
+                <label for="other-text"></label>
+                <textarea id="other-text" name="other_details"></textarea> 
+            </div>
+            <button type="submit" class="formatted-button">Submit</button> 
+        </form>
+    </div>
+    <script>
+        document.getElementById("reservationForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // this stops how the form submits so we can listen for the data in the next page
+            // this makes the submit button give the data to the next page 
+            window.location.href = "completedForm.html?" + new URLSearchParams(new FormData(event.target));
+        });
+    </script>
+</body>
+</html>

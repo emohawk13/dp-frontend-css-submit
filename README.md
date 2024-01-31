@@ -1,28 +1,38 @@
-Assignment - Webpage Replication 3
+Assignment - Reservation Webform Refactor
 
 
-Now that we better understand the box model, display and layout we are ready to try replicating a harder layout. In this replication we will recreate the login page below.
+Completion requirements
+In the HTML Unit we were asked to create a webform to help users book a trip. There will be many times in our career where we will be asked to refactor old code using new practices.
 
-Include the following in your replication:
 
-Create a navigation bar
+Refactor the webform to include the following:
 
-Include a hero image that takes up the left half of the page
+Create a Homepage including a:
+Create a navbar
+Include a tab in the navbar that navigates to the webform
+Create a hero image and hero content
+Page content that describes the site's goal as a trip booker
 
-The login form should:
-Be on the right side of the page
-Be centered in the white space
-Submit to https://httpbin.org/post and should echo back
-Include a:
-Large header
-Email field (required field)
-Password field (required field)
-Submit Button
-Style the form elements
+Include all styling from the CSS Unit.
 
-Additional Stylings:
-Include 2 (two) icons from fontawesome
-Import at least 1 (one) font from google fonts
-Have a default font for the whole page
-Change the default font to a different font for your login header
-Style the form elements (the best you can)
+Ensure the website can be viewed from full screen and half screen efficiently. All layouts should be altered using media queries along with flexbox and grid styling.
+
+Use relative measurements for all elements. This will ensure they will grow and shrink responsively as the browser's width changes size.
+
+NOTE: Check your old webform for the following criteria or build the webform again with the crtieria below:
+Create a webform that will take the following data:
+
+Create a reservation form. Include the following tags and attributes in your form:
+Input  <input> </input>
+Id
+Name
+Placeholder
+Value
+Type
+Select  <select> </select>
+Textarea  <textarea> </textarea>
+
+Additional Tips
+Focus on the proper layout and structure
+A footer for the web page including a fake phone number and address
+Add the required attributes to require a few or all fields in the form
