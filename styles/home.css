@@ -1,0 +1,162 @@
+/* Hero Section */
+.hero-wrapper {
+  height: 800px;
+  position: relative;
+  background-image: url("https://source.unsplash.com/random/?bookshelf");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-wrapper > .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 10px;
+  font-size: 1.25em;
+  letter-spacing: 8px;
+  opacity: 0.8;
+  color: lightgrey;
+}
+
+/* About Section */
+
+.about-wrapper {
+  text-align: center;
+  padding: 60px;
+}
+
+.about-wrapper > .about-header > p:nth-of-type(1) {
+  font-style: italic;
+}
+
+.about-wrapper > .about-header > p:nth-of-type(2) {
+  text-align: justify;
+}
+
+.about-wrapper > .about-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 45px;
+  width: 100%;
+}
+
+.about-wrapper > .about-content-wrapper > .photo-wrapper {
+  margin: 25px;
+}
+
+/* Accolades */
+.accolades-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: darkslategray;
+  color: white;
+  height: 60px;
+}
+
+.accolades-wrapper > .accolade-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.accolades-wrapper > .accolade-item-wrapper > span {
+  color: lightgray;
+}
+
+/* Portfolio Section */
+.portfoilo-wrapper > .portfoilo-header-wrapper {
+  height: 700px;
+  position: relative;
+  background-image: url("https://source.unsplash.com/random/?office");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.portfoilo-wrapper > .portfoilo-header-wrapper > .portfoilo-header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 10px;
+  font-size: 1.25em;
+  letter-spacing: 8px;
+  opacity: 0.8;
+  color: lightgrey;
+}
+
+.portfoilo-wrapper > .portfoilo-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.portfoilo-wrapper > .portfoilo-section-wrapper > p{
+  width: 80%;
+}
+
+.portfoilo-wrapper > .portfoilo-section-wrapper > .portfoilo-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* Contact Section */
+.contact-wrapper > .contact-header-wrapper > .contact-header-content {
+  position: relative;
+  height: 700px;
+  background-image: url("https://source.unsplash.com/random/?office");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-wrapper > .contact-header-wrapper > .contact-header-content > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 10px;
+  font-size: 1.25em;
+  letter-spacing: 8px;
+  opacity: 0.8;
+  color: lightgrey;
+}
+
+.contact-wrapper > .contact-section-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+
+/* Footer Section */
+.footer-wrapper > .return-link-wrapper{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: slategray;
+  color: white;
+}
+
+.social-media-wrapper {
+  font-size: 30px;
+  justify-self: flex-end;
+}
