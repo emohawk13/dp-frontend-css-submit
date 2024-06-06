@@ -1,0 +1,34 @@
+/* Comment out whats not being used */
+/* showing how flex works, if you take it away then the output will be displayed in a column view */
+.parent {
+  display: flex;
+  border: 1px solid black;
+  /* adjust view height */
+  /* height: 40vh;  */
+  /* width: 400px; */
+  /* this part shows how flex-direction works by changing the default row to column in the output */
+  /* flex-direction: column; */
+  /* flex-direction: row-reverse; */
+  /* Main-Axis and justify content -- main axis == left to right (align-items, justify == top to bottom */
+  /* this part shows an example of space-around using justify-content, this will provide equal space between each object in the output */
+  /* justify-content: space-between; */
+  /* this part uses gap, this allows you to be able to put custom spacing between the objects in the output */
+  /* gap: 1%; */
+  /* align-items works on the cross axis see main-axis */
+  /* align-items: center; */
+  /* flexbox will wrap items using wrap */
+  /* flex-wrap: wrap; */
+}
+
+.container {
+  /* this shows that flex only influences the child level the children are going to do what they default to */
+  display: flex;
+  margin: 48px;
+  border: 4px solid red;
+}
+
+.child {
+  height: 100px;
+  width: 100px;
+}
+
