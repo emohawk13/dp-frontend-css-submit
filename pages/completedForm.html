@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/styles/common-styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/styles/common-styles.css">
     <title>Completed Form</title>
 </head>
+
 <body>
-    <div class="container">
-        <h2>Thank you for submitting the form!</h2>
-        <h3>Submitted Data:</h3>
-        <div class="final-data">
-            <p>First Name: <span id="fname"></span></p>
-            <p>Last Name: <span id="lname"></span></p>
-            <p>Email: <span id="email"></span></p>
-            <p>Phone Number: <span id="pnumber"></span></p>
-            <p>Start Date: <span id="sdate"></span></p>
-            <p>End Date: <span id="edate"></span></p>
-        </div>
-        <div>
+    <div class="shadow">
+        <div class="complete-container">
+            <h2>Enjoy your vacation!</h2>
+            <p>Name: <span id="fname"></span> <span id="lname"></span></p>
+            <div class="complete-grid">
+                <p>Email: <span id="email"></span></p>
+                <p>Phone Number: <span id="pnumber"></span></p>
+                <p>Arrival Date: <span id="sdate"></span></p>
+                <p>Departure Date: <span id="edate"></span></p>
+            </div>
+            <div id="otherAcSection" style="display: none;">
+                <p>Other Accommodations:</p>
+                <p id="otherAc"></p>
+            </div>
             <a href="../index.html">Home</a>
         </div>
     </div>
 
     <script>
-        // how we listen for the submit button
         function getUrlParams() {
             var params = {};
-            window.location.search.substring(1).split("&").forEach(function(pair) {
+            window.location.search.substring(1).split("&").forEach(function (pair) {
                 var parts = pair.split("=");
-                params[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1]);
+                params[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1].replace(/\+/g, ' '));
             });
             return params;
         }
 
-        // this is what gets the data from the form
         function populateFormFields() {
             var params = getUrlParams();
-            document.getElementById("fname").textContent = params.f_name || "N/A";
-            document.getElementById("lname").textContent = params.l_name || "N/A";
-            document.getElementById("email").textContent = params.email || "N/A";
-            document.getElementById("pnumber").textContent = params.p_number || "N/A";
-            document.getElementById("sdate").textContent = params.s_date || "N/A";
-            document.getElementById("edate").textContent = params.e_date || "N/A";
+            document.getElementById("fname").textContent = params.f_name || "First Name";
+            document.getElementById("lname").textContent = params.l_name || "Last Name";
+            document.getElementById("email").textContent = params.email || "Email";
+            document.getElementById("pnumber").textContent = params.p_number || "Phone Number";
+            document.getElementById("sdate").textContent = params.s_date || "Start Date";
+            document.getElementById("edate").textContent = params.e_date || "End Date";
+
+            if (params.other_details && params.other_details.trim() !== "") {
+                document.getElementById("otherAc").textContent = params.other_details;
+                document.getElementById("otherAcSection").style.display = "block";
+            }
         }
-        // this fills the fields
+
         window.onload = populateFormFields;
     </script>
 </body>
+
 </html>
