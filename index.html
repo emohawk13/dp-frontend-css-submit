@@ -14,133 +14,17 @@
     <nav>
         <div class="logo">Stuff N' Things</div>
     </nav>
-    <div class="login-containers">
-        <div class="login-img container"></div>
+    <div class="main-container">
+        <div class="hero-img"></div>
         <div class="login-container">
             <h1 class="h1">Login</h1>
-            <form action="/login" method="POST" class="form-group">
-                <input type="email" name="email" placeholder="Email">
-                <input type="password" name="password" placeholder="Password">
+            <form action="https://httpbin.org/post" method="POST" class="form-group">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
                 <button type="submit" class="standard-button">Submit</button>
             </form>
         </div>
-
     </div>
 </body>
 
 </html>
-
-body {
-font-family: "Roboto", sans-serif;
-margin: 0;
-padding: 0;
-overflow: hidden;
-}
-
-nav {
-background-color: #333;
-color: white;
-padding: 10px 20px;
-}
-
-.logo {
-font-size: 24px;
-font-weight: bold;
-}
-
-.login-containers {
-display: flex;
-width: 100%;
-height: 100vh;
-}
-
-.login-containers .container {
-flex: 1;
-}
-
-.login-containers {
-display: flex;
-height: 100vh;
-}
-.login-containers .login-img {
-background-image:
-url(https://images.unsplash.com/photo-1489389944381-3471b5b30f04?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-max-width: 50%;
-height: 100vh;
-padding: 0;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.login-containers .container {
-flex: 1;
-}
-.login-containers .login-container {
-margin: 10% 10%;
-height: 35vh;
-width: 35vw;
-}
-.login-containers .login-container h1 {
-font-family: "Roboto", sans-serif;
-text-align: center;
-margin-bottom: 20px;
-}
-.login-containers .login-container .form-group {
-width: 90%;
-border: 1px solid #bad4aa;
-padding: 10%;
-border-radius: 5px;
-background-color: #aaaaaa;
-}
-.login-containers .login-container .form-group input[type="email"],
-.login-containers .login-container .form-group input[type="password"] {
-width: 100%;
-padding: 10px;
-margin-bottom: 10px;
-border: 1px solid #bad4aa;
-border-radius: 5px;
-box-sizing: border-box;
-}
-
-Now that we better understand the box model, display and layout we are ready to try replicating a harder layout. In this
-replication we will recreate the login page below.
-
-Include the following in your replication:
-
-Create a navigation bar
-
-Include a hero image that takes up the left half of the page
-
-The login form should:
-Be on the right side of the page
-Be centered in the white space
-Submit to https://httpbin.org/post and should echo back
-Include a:
-Large header
-Email field (required field)
-Password field (required field)
-Submit Button
-Style the form elements
-
-Additional Stylings:
-Include 2 (two) icons from fontawesome
-Import at least 1 (one) font from google fonts
-Have a default font for the whole page
-Change the default font to a different font for your login header
-Style the form elements (the best you can)
-Push your replication and styling sheet to github and submit your link in the field below.
-
-refactor comments:
-
-1. h1 should be placed outside the form tag
-2. img will take on its original size by default. To fill an entire content area of a box model, you must provide it the
-width and height (unless you make it a background image)
-3. The submit button seems to be missing. I added it and the hover effect works as expected. Add it to your code.
-4. The class name "containers" could be more specific. There is a main tag used to wrap the main content of the page. A
-div with the name "main-container" or "home-container" also help make its purpose more explicit.
-5. As with the note above, "left" and "right" prefix, though they state their position, should focus on purpose. If the
-design were to change the names would not make sense and would have to change (making the naming not scalable). Once you
-have made the following changes let me know and I will re-grade.

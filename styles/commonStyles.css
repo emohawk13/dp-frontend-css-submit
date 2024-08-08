@@ -16,58 +16,66 @@ nav {
   font-weight: bold;
 }
 
-.login-containers {
+.main-container {
   display: flex;
-  width: 100%;
+  width: 95%;
   height: 100vh;
 }
 
-.login-containers .container {
-  flex: 1;
-}
-
-.login-containers {
-  display: flex;
-  height: 100vh;
-}
-.login-containers .login-img {
-  background-image: url(https://images.unsplash.com/photo-1489389944381-3471b5b30f04?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+.hero-img {
+  background-image: url("https://images.unsplash.com/photo-1489389944381-3471b5b30f04?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 50%;
+  flex: 1;
   height: 100vh;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.login-containers .container {
+
+.login-container {
   flex: 1;
+  padding: 10% 2%;
+  height: 50vh;
+  width: 50vw;
 }
-.login-containers .login-container {
-  margin: 10% 10%;
-  height: 35vh;
-  width: 35vw;
-}
-.login-containers .login-container h1 {
+
+.login-container h1 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   margin-bottom: 20px;
 }
-.login-containers .login-container .form-group {
+
+.form-group {
   width: 90%;
   border: 1px solid #bad4aa;
   padding: 10%;
   border-radius: 5px;
   background-color: #aaaaaa;
+  margin: auto;
 }
-.login-containers .login-container .form-group input[type="email"],
-.login-containers .login-container .form-group input[type="password"] {
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #bad4aa;
   border-radius: 5px;
   box-sizing: border-box;
+}
+
+.standard-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.standard-button:hover {
+  background-color: #555;
 }
